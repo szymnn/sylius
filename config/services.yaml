@@ -5,10 +5,10 @@ parameters:
 
 services:
     
-    app.form.extension.type.customer_profile:
-        class: App\Form\Extension\ProductOptionTypeExtension
+    app.form.extension.type.product:
+        class: App\Form\Extension\ProductTypeExtension
         tags:
-            - { name: form.type_extension, extended_type: Sylius\Bundle\ProductBundle\Form\Type\ProductOptionType }
+            - { name: form.type_extension, extended_type: Sylius\Bundle\ProductBundle\Form\Type\ProductType }
     
     # Default configuration for services in *this* file
     _defaults:
@@ -38,4 +38,4 @@ services:
     # as action arguments even if you don't extend any base controller class
     App\Controller\:
         resource: '../src/Controller'
-        tags: ['controller.service_arguments']
+        tags: [ 'controller.service_arguments' ]
