@@ -48,3 +48,8 @@
 /yarn.lock
 ###< symfony/webpack-encore-bundle ###
 .idea
+.env.test
+.env
+.env.prod
+.eslintrc.js
+.babelrc
